@@ -1,0 +1,121 @@
+.spacer {
+    flex: 1 1 auto;
+  }
+  .game-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 16px;
+    justify-content: center;
+  }
+  
+  .game-card {
+    max-width: 300px;
+  }
+  /* Nastavenie pre celý toolbar */
+.mat-toolbar {
+    background-color: #1b2838; /* Dark modrá farba podobná Steam téme */
+    color: #ffffff;           /* Biela farba textu */
+    padding: 0 16px;          /* Odstup po stranách */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Štýl pre ľavú časť (názov stránky a tlačidlo Home) */
+  .toolbar-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .toolbar-left .site-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 20px; /* Odstup medzi názvom a tlačidlom */
+  }
+  
+  .mat-button {
+    color: #c5c6c7; /* Jemnejšia biela pre tlačidlá */
+  }
+  
+  /* Štýl pre pravú časť (košík) */
+  .toolbar-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .mat-icon {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  /* Odznak na ikone košíka */
+  .mat-badge {
+    margin-right: 8px; /* Odstup medzi košíkom a odznakom */
+  }
+  
+  /* Media query pre menšie obrazovky */
+  @media (max-width: 768px) {
+    .site-title {
+      font-size: 1.2rem;
+    }
+    .mat-button {
+      font-size: 0.875rem;
+    }
+  }
+
+
+/* Základné štýly pre tlačidlo */
+.custom-button {
+    background-color: #1b2838; /* Tmavomodrá farba podobná Steam téme */
+    color: #ffffff;            /* Biela farba textu */
+    border: none;
+    border-radius: 4px;        /* Jemne zaoblené rohy */
+    padding: 8px 16px;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase; /* Všetky písmená veľké */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Hover efekt */
+  .custom-button:hover {
+    background-color: #2a475e; /* Svetlejšia modrá pri hover */
+    transform: translateY(-2px);
+  }
+  
+  /* Efekt pri kliknutí */
+  .custom-button:active {
+    background-color: #0f1c28;
+    transform: translateY(0);
+  }
+  
+  /* Disabled stav */
+  .custom-button:disabled {
+    background-color: #3a3f44;
+    color: #9aa0a6;
+    cursor: not-allowed;
+    transform: none;
+  }
+  
+  /* Ikona v tlačidle */
+  .custom-button mat-icon {
+    margin-right: 8px; /* Odstup medzi ikonou a textom */
+    font-size: 20px;
+  }
+  
+  /* Media query pre menšie obrazovky */
+  @media (max-width: 600px) {
+    .custom-button {
+      font-size: 0.875rem; /* Zmenšenie textu pre mobilné zariadenia */
+      padding: 6px 12px;
+    }
+  }
+    
+p{
+    color: #2a475e;
+}
