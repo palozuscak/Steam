@@ -1,62 +1,20 @@
-
-<h1>Welcome to steam!</h1>
-<p>These are my 3 most played games:</p>
-
-
+<link
+href="https://fonts.googleapis.com/icon?family=Material+Icons"
+rel="stylesheet"
+/>
 <mat-toolbar color="primary">
     <!-- Ľavá strana toolbaru -->
     <span>Steam</span>
-    <button mat-button routerLink="/">Home</button>
+    <button mat-button routerLink="/home">Home</button>
   
     <!-- Oddelenie medzi ľavou a pravou stranou -->
     <span class="spacer"></span>
   
     <!-- Pravá strana toolbaru - ikona košíka -->
-    <button mat-icon-button>
+    <button mat-button routerLink="/about">Shop<!--/button>
+    <button mat-icon-button routerLinkActive="/about" ariaCurrentWhenActive="page"-->
       <mat-icon>shopping_cart</mat-icon>
     </button>
   </mat-toolbar>
 
-  <div class="game-cards">
-    <mat-card class="game-card">
-      <mat-card-header>
-        <mat-card-title>Game Title</mat-card-title>
-        <mat-card-subtitle>Genre: Action</mat-card-subtitle>
-      </mat-card-header>
-      <img
-        mat-card-image
-        src="https://via.placeholder.com/300"
-        alt="Game Image"
-      />
-
-      <mat-card-content>
-        <p>
-          Exciting game description goes here. This is where you can attract
-          players with an engaging description.
-        </p>
-
-      </mat-card-content>
-      
-      <mat-card-actions>
-        <button class="custom-button"mat-button color="primary">Add to Cart</button>
-      </mat-card-actions>
-    </mat-card>
-  </div>
-  <link
-  href="https://fonts.googleapis.com/icon?family=Material+Icons"
-  rel="stylesheet"
-/>
-<button class="custom-button" mat-fab color="primary">
-    <mat-icon>add</mat-icon>
-    
-  </button>
-  <link
-  href="https://fonts.googleapis.com/icon?family=Material+Icons"
-  rel="stylesheet"
-  
-/>
-
-
-
-<app-game *ngFor="let game of gameComponentList"
-[game]="game"></app-game>
+<router-outlet></router-outlet>

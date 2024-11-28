@@ -24,3 +24,4 @@ export class GameComponent {
 }
    
 
+// pridať funkciu na kupu hry

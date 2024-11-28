@@ -16,7 +16,7 @@
 .mat-toolbar {
     background-color: #1b2838; /* Dark modrá farba podobná Steam téme */
     color: #ffffff;           /* Biela farba textu */
-    padding:  16px;          /* Odstup po stranách */
+    padding: 0 16px;          /* Odstup po stranách */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -36,7 +36,6 @@
   
   .mat-button {
     color: #c5c6c7; /* Jemnejšia biela pre tlačidlá */
-    
   }
   
   /* Štýl pre pravú časť (košík) */
